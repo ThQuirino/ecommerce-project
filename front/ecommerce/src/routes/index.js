@@ -1,13 +1,8 @@
 import React from 'react'
-
-import AppAuntent from './app.routes'
-
+import MyDrawer from './drawer.routes'
 const Routes=()=>{
     return (
-      
-        <AppAuntent/>
-    
-       
+          <MyDrawer/>
     )
 }
 export default Routes;

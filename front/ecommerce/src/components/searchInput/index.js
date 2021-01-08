@@ -6,8 +6,9 @@ function SearchInput() {
 
     return (
         <Container>
-            <SearchIcon name='search' size={30}/>
-            <Input />
+            <SearchIcon name='search' size={30} />
+            <Input underlineColorAndroid = "transparent"
+               placeholder = "Nome do produto"/>
         </Container>
     )
 }

@@ -5,6 +5,7 @@ import {Button} from 'react-native';
 export default function Login ({navigation}){
     function navigateToMenu(){
         navigation.navigate('Menu');
+
     }
     return(
         <Container>

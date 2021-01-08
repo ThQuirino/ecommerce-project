@@ -20,7 +20,7 @@ const Input = styled.TextInput`
     height: 33px;
     border:1px;
     position:relative;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color:#fff;
 
 `

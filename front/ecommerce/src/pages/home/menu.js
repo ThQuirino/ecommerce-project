@@ -1,18 +1,28 @@
 import React from 'react'
-import {Container,Texto,Input} from './styles.js'
-import {Button}from 'react-native'
+import {Container,Texto,Input,Notifit,Butto} from './styles.js'
 import Nav from '../../components/navbar/index.js'
+import Carrossel from '../../components/carrossel/index'
 export default function Menu ({navigation}){
-    function navigateToUsers(){
+ 
+    function navigateTo(){
         navigation.navigate('Login');
+
+    }
+    function navigateCreate(){
+        navigation.navigate('Cadastro');
+
     }
     return(
     
-        <Container>
+        <Container>     
+            <Nav navigation={navigation}/>
+            <Carrossel/>
+            <Notifit>
+                <Texto>Acesse sua conta agora</Texto>
+                <Butto title="Open" onPress={navigateTo}/>
+                <Texto onPress={navigateCreate}>Criar conta</Texto>
+            </Notifit>
           
-            <Nav/>
-         
-           {/**<Button title="Navigate" onPress={navigateToUsers}/>*/} 
         </Container>
        
         
